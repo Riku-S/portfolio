@@ -1,1 +1,490 @@
-<h1>Riku Salminen - Portfolio</h1>
+<style>
+body {
+	margin: 0;
+	font-family: Arial;
+	background-color: #202428;
+	background-image: url("images/background.png");
+	background-repeat: no-repeat;
+	padding: 0px;
+	margin: 0px;
+}
+
+div {
+	width: 100%;
+	display: block;
+	color: #f0f0f0;
+}
+
+.headerDiv {
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+	display: block;
+	background-color: none;
+	color: #f0f0f0;
+}
+
+
+.containerDiv {
+	width: 90%;
+	margin: auto;
+    margin-top: 12px;
+	display: block;
+	text-align: left;
+	background-color: rgba(0,0,0,0.20);
+	color: #f0f0f0;
+	padding: 8px 18px 8px 18px;
+	border-radius: 5px;
+	border: 1px solid rgba(0,0,0,0.30);
+}
+
+.headerTable {
+	padding: 0px;
+	margin: 0px;
+	width: 100%;
+	border-spacing: 0;
+    border-collapse: collapse;
+}
+
+.headerBox {
+	height: 100%;
+	padding: 0px;
+	margin: 0px;
+	text-align: center;
+	color: #f0f0f0;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.linkbox{
+	margin: 0px;
+	padding: 8px 0px;
+}
+
+.linkbox:hover{
+	background: #404850;
+	color: #f0f0f0;
+	background-color: rgba(225,230,235,0.25);
+}
+
+label {
+	text-align: left;
+}
+
+.headerLink {
+	height: 100%;
+	width: 100%;
+	color: #f0f0f0;
+	text-decoration: none;
+}
+
+.languageButton {
+	height: 30px;
+	border-radius: 15px;
+}
+
+.languageButton:hover {
+	height: 28px;
+	border: 1px solid rgba(0,0,0,0.30);
+	cursor: pointer;
+}
+
+.shaderDescriptionTd {
+	color: #f0f0f0;
+	padding: 20px;
+}
+
+.shaderImage{
+	width: 100%;
+	border-radius: 15px;
+}
+
+.labelLink {
+	color: white;
+}
+
+.footer {
+	width: 100%;
+    margin-top: 12px;
+	background-color: rgba(0,0,0,0.30);
+	height: 32px;
+	color: white;
+}
+
+.shaderTable{
+	border: 1px solid rgba(0,0,0,0.25);
+	background-color: rgba(0,0,0,0.15);
+	border-radius: 15px;
+	margin-bottom: 16px;
+}
+
+</style>
+
+<body onload="initFunction();" style="display: none;">
+	<div class="headerDiv">
+		<table class="headerTable">
+			<td class="headerBox" style="font-size: 30px; color: #e0e4e8"><b>Riku</b></td>
+			<td class="headerBox"><a class="headerLink" href="https://github.com/Riku-S" target="_blank"><div class="linkBox">Github</div></a></td>
+			<td class="headerBox"><a class="headerLink" href="https://www.youtube.com/channel/UCl_W0XAjqyBp4KivOaWSe4Q" target="_blank"><div class="linkBox">Youtube</div></a></td>
+			<td class="headerBox" style="align: right; text-align: right; padding: 2px;"><img class="languageButton" src="images/lang-en.png" alt="English Flag" onclick="setLanguage('English')"> <img class="languageButton" src="images/lang-fi.png" alt="Finnish Flag" onclick="setLanguage('Finnish')"></td>
+			
+		</table>
+	</div>
+	
+	
+	<div class="containerDiv">
+		<h2 lang="English">About me</h2>
+		<h2 lang="Finnish">Tietoa minusta</h2>
+		<br>
+		<label lang="English">
+			Hello! I'm Riku Salminen, a Finnish nerd who is interested in a variety of things, and this page is where I show what I've done on computer.<br>
+			<br>
+			I have learnt programming by modding games and doing some random projects that have felt interesting. The programming related stuff is the main focus of the page, but I'm still willing to show some other computer related stuff as well, such as level design in games and music production. There's also a link to my Youtube channel since I feel like the speedruns on the channel have been a hobby to me.
+		</label>
+		<label lang="Finnish">
+			Terve! Olen Riku Salminen, suomalainen nörtti joka on kiinnostunut monenlaisista asioista, ja tällä sivulla näytän aikaansaannoksia tietokoneella .<br>
+			<br>
+			Olen oppinut ohjelmointia modaamalle pelejä ja tekemällä muita mielenkiintoiselta tuntuneita projekteja. Sivulla keskitytään pääasiassa ohjelmointiin, mutta näytän mielellänin muutakin, kuten peleihin luotuja kenttiä ja musiikkituotoksia. Youtube-kanavallekin on linkki, sillä mielstäni kanavalla olevat speedrunit ovat vapaa-ajastani kertova harrastus.
+		</label>
+	</div>
+	
+	
+	<div class="containerDiv">
+		<h2 lang="English">Shaders</h2>
+		<h2 lang="Finnish">Shaderit</h2>
+		<br>
+		
+		<table class="shaderTable">
+			<td class="shaderImageTd" width="25%">
+				<img class="shaderImage" src="images/shaders/1000000dreams.png" alt="1 000 000 Dreams">
+			</td>
+			<td class="shaderDescriptionTd" width="75%">
+				<h2 lang="Any">1 000 000 dreams</h2>
+				<label lang="English">One of my first projects with the ray marching method, but probably the best I've done so far. The backgound of the page is a modified screenshot of the shader.
+				<br><br><a class="labelLink" href="https://www.shadertoy.com/view/tdXSWN" target="_blank">View on shadertoy</a>.</label>
+				<label lang="Finnish">Yksi ensimmäisistä projekteistani, jotka käyttää ray marching metodia, mutta niistä mahdollisesti paras. Sivun taustakuva on muokattu screenshotti tästä teoksesta.
+				<br><br><a class="labelLink" href="https://www.shadertoy.com/view/tdXSWN" target="_blank">Katso Shadertoyssa</a>.</label>
+			</td>
+		</table>
+		<table class="shaderTable">
+			<td class="shaderDescriptionTd" width="75%">
+				<h2 lang="Any">3D sound interaction experiment</h2>
+				<label lang="English">A 3-dimensional object using Shadertoy and its features react to the music.
+				<br><br><a class="labelLink" href="https://www.shadertoy.com/view/4lyBDG" target="_blank">View on shadertoy</a>.</label>
+				<label lang="Finnish">Kolmiuloitteninen esine, joka käyttää shadertoyta ja sen ominaisuuksia reagoidakseen musiikkiin.
+				<br><br><a class="labelLink" href="https://www.shadertoy.com/view/4lyBDG" target="_blank">Katso Shadertoyssa</a>.</label>
+			</td>
+			<td class="shaderImageTd" width="25%">
+				<img class="shaderImage" src="images/shaders/soundexperiment.png" alt="3D sound interaction experiment">
+			</td>
+		</table>
+		<table class="shaderTable">
+			<td class="shaderImageTd" width="25%">
+				<img class="shaderImage" src="images/shaders/4mybuddies.png" alt="4MyBuddies">
+			</td>
+			<td class="shaderDescriptionTd" width="75%">
+				<h2 lang="Any">4MyBuddies</h2>
+				<label lang="English">A shader that I made to my best friends. A heart turns into eight smaller ones, which turn into letters with a friendly message. ;)
+				<br><br><a class="labelLink" href="https://www.shadertoy.com/view/tdfSWN" target="_blank">View on shadertoy</a>.</label>
+				<label lang="Finnish">Parhaille kavereille omistettu shaderi. Sydän jakaantuu kahdeksaksi pienemmäksi, jotka muuttuu kirjaimiksi jättäen ystävällisen viestin. ;)
+				<br><br><a class="labelLink" href="https://www.shadertoy.com/view/tdfSWN" target="_blank">Katso Shadertoyssa</a>.</label>
+			</td>
+		</table>
+		<table class="shaderTable">
+			<td class="shaderDescriptionTd" width="75%">
+				<h2 lang="Any">Core of the Zebra</h2>
+				<label lang="English">I made this while learning to use materials, 3D matrices, and the glow effect.
+				<br><br><a class="labelLink" href="https://www.shadertoy.com/view/wsXSWN" target="_blank">View on shadertoy</a>.</label>
+				<label lang="Finnish">Tein tämän opetellessani materiaalien, 3D-matriisien ja valon heijastuksen käyttöä.
+				<br><br><a class="labelLink" href="https://www.shadertoy.com/view/wsXSWN" target="_blank">Katso Shadertoyssa</a>.</label>
+			</td>
+			<td class="shaderImageTd" width="25%">
+				<img class="shaderImage" src="images/shaders/coreofthezebra.png" alt="Core of the Zebra">
+			</td>
+		</table>
+		<table class="shaderTable">
+			<td class="shaderImageTd" width="25%">
+				<img class="shaderImage" src="images/shaders/powerplant.png" alt="3D sound interaction experiment">
+			</td>
+			<td class="shaderDescriptionTd" width="75%">
+				<h2 lang="Any">Power Plant</h2>
+				<label lang="English">Made a 2-dimensional plant and applied a bunch of visual effects to it.
+				<br><br><a class="labelLink" href="https://www.shadertoy.com/view/XtKBWy" target="_blank">View on shadertoy</a>.</label>
+				<label lang="Finnish">Tein kaksiuloitteisen kasvin, johon laitoin hieman visuaalisia efektejä.
+				<br><br><a class="labelLink" href="https://www.shadertoy.com/view/XtKBWy" target="_blank">Katso Shadertoyssa</a>.</label>
+			</td>
+		</table>
+		<table class="shaderTable">
+			<td class="shaderDescriptionTd" width="75%">
+				<h2 lang="Any">Spiral tube</h2>
+				<label lang="English">The name says it all. A spiral and a tube made out of planes.
+				<br><br><a class="labelLink" href="https://www.shadertoy.com/view/wdfSWN" target="_blank">View on shadertoy</a>.</label>
+				<label lang="Finnish">Nimi kertoo kaiken. Spiraali ja levyistä tehty tunneli.
+				<br><br><a class="labelLink" href="https://www.shadertoy.com/view/wdfSWN" target="_blank">Katso Shadertoyssa</a>.</label>
+			</td>
+			<td class="shaderImageTd" width="25%">
+				<img class="shaderImage" src="images/shaders/spiraltube.png" alt="Power Plant">
+			</td>
+		</table>
+	</div>
+	
+	
+	<div class="containerDiv">
+		<h2 lang="English">Modding Sonic Robo Blast 2</h2>
+		<h2 lang="Finnish">Sonic Robo Blast 2 modaus</h2>
+		<table class="shaderTable">
+			<td class="shaderImageTd" width="25%">
+				<img class="shaderImage" src="images/srb2/srb20000.png" alt="Segmented Credits">
+			</td>
+			<td class="shaderDescriptionTd" width="75%">
+				<h2 lang="English">SRB2 EXE mod: Segmented speedrun</h2>
+				<h2 lang="Finnish">SRB2 EXE-modi: Segmentoitu speedrun</h2>
+				<label lang="English">This mod allows you to make almost realistic looking segmented speedrun. In the vanilla version of the game you can record replays in individual maps in record attack mode. This mod allows you to replay them one by one in correct order with single player gametype's HUD, camera, and level transitions, making it look like the game was completed live. There are elements that intentionally show that the run is segmented, such as the "Play without mistakes" button that you have to press to start the run, HUD that shows who has made the segment, and custom credits cutscene. Modified from Sonic Robo Blast 2 2.1.20.
+				<br><br><a class="labelLink" href="https://www.dropbox.com/s/cnatzs5flo80h8g/segmented2.1.20.rar?dl=1" target="_blank">Download it here</a>.</label>
+				
+				<label lang="Finnish">Tällä modilla pystyy tekemään melkein realistisen näköisiä Segmentoituja speeruneja. Pelin modaamattomassa versiossa pystyy tekemään tallenteita record attack -pelimuodossa. Tämän modin avulla voi näyttää tallenteet oikeassa järjestyksessä peräkkäin yksinpelin HUD:in, kameran ja kenttätransitioiden kanssa, näyttäen siltä, että peli olisi läpäisty livenä. On asioita, jotka tarkoituksella paljastaa speedrunin segmentoiduksi, kuten "Play without mistakes" -nappi, jota painamalla speedrun alkaa, HUD joka näyttää segmentin suorittajan ja muokatut lopputekstit. Muokattu versiosta Sonic Robo Blast 2 2.1.20.
+				<br><br><a class="labelLink" href="https://www.dropbox.com/s/cnatzs5flo80h8g/segmented2.1.20.rar?dl=1" target="_blank">Lataa täältä</a>.</label><br>
+				<label lang="Any"><a class="labelLink" href="https://www.youtube.com/watch?v=hZ8Dxtfig3Q&t=1128s" target="_blank">Youtube: Kitokofox - SRB2 Community Segmented: Sonic Any% in 18:45.34 IGT</a><br>
+				<a class="labelLink" href="https://www.youtube.com/watch?v=DtrxDaY3xkU&t=409s" target="_blank">Youtube: Kitokofox - SRB2 Community Segmented: Tails Any% in 18:38.20 IGT</a><br>
+				<a class="labelLink" href="https://www.youtube.com/watch?v=4vCzQrUu5Uk&t=1207s" target="_blank">Youtube: Kitokofox - SRB2 Community Segmented: Knuckles Any% in 21:49.42 IGT</a><br>
+				<a class="labelLink" href="https://www.youtube.com/watch?v=dc5oCOZ2ZyQ&t=639s" target="_blank">Youtube: ZippyZero - Sonic Robo Blast 2: The SRB1 Remake Segmented Speedrun in 19:25.30 (15:24.68 IGT)</a></label>
+			</td>
+		</table>
+		<table class="shaderTable">
+			<td class="shaderImageTd" width="25%">
+				<img class="shaderImage" src="images/srb2/srb20118.gif" alt="Triangles">
+			</td>
+			<td class="shaderDescriptionTd" width="75%">
+				<h2 lang="English">SRB2 Lua: Triangles and 3D shapes</h2>
+				<h2 lang="Finnish">SRB2 Lua: Kolmiot ja 3D muodot</h2>
+				<label lang="English">Used Sonic Robo Blast 2's Lua code to draw triangles and quads line by line. It uses rotation matrices declared in the script to rotate shapes, but the way the depth affects the drawing distance is a little distorted. The Lua script of the game is definitely not the most optimal way to draw the shapes, but it was a fun challenge to optimize the script to the point it could draw the scene.
+				<br><br><a class="labelLink" href="https://github.com/Riku-S/SRB2/blob/master/Triangles.lua" target="_blank">Download it here</a>.</label>
+				
+				<label lang="Finnish">Sonic Robo Blast 2:n Luakoodilla kolmioita ja neliöitä viiv kerrallaan piirtävä skripti. Se käyttää koodissa määriteltyjä matriiseja muotojen kääntelyyn, mutta etäisyyden vaikutus piirtoon on hieman vääristynyt. Pelin Lua-kieli ei ole todellakaan optimaalisin tapa piirtää kolmiuloitteisia muotoja, mutta oli mielenkiintoinen haaste optimoida skriptiä siihen pisteeseen, että se pytyy piirtämään GIF:issä näkyvän kohtauksen.
+				<br><br><a class="labelLink" href="https://github.com/Riku-S/SRB2/blob/master/Triangles.lua" target="_blank">Lataa täältä</a>.</label>
+			</td>
+		</table>
+		<table class="shaderTable">
+			<td class="shaderImageTd" width="25%">
+				<img class="shaderImage" src="images/srb2/srb20076.png" alt="Connect5">
+			</td>
+			<td class="shaderDescriptionTd" width="75%">
+				<h2 lang="Any">SRB2 Lua: Connect 5</h2>
+				<label lang="English">The classical Connect 5 game made with Sonic Robo Blast 2's Lua code to be played on servers! A game inside a game.
+				<br><br><a class="labelLink" href="https://github.com/Riku-S/SRB2/blob/master/Connect5.lua" target="_blank">Download it here</a>.</label>
+				
+				<label lang="Finnish">Klassinen jätkänshakki tehty Sonic Robo Blast 2:n Lua koodilla servereillä peluuta varten! Peli pelin sisällä.
+				<br><br><a class="labelLink" href="https://github.com/Riku-S/SRB2/blob/master/Connect5.lua" target="_blank">Lataa täältä</a>.</label>
+			</td>
+		</table>
+		<table class="shaderTable">
+			<tr>
+				<td  class="shaderImageTd" width="20%">
+					<img class="shaderImage" src="images/srb2/srb20102.png" alt="Blue Beach">
+				</td>
+				<td class="shaderDescriptionTd" width="80%" rowspan="6">
+					<h2 lang="Any">Orsland</h2>
+					<label lang="English">
+						<b>History:</b><br>
+						This is the first modding project I ever released in this game. I started making levels for this pack with SRB2 Doom Builder in 2010 and kept making levels every now and then. Finally, the project was released in 2013-01-18 when I was 13. The first release had 6 levels in the single player campaign: <b>Blue Beach 1-3</b> and <b>Xtreme Xmas 1-3</b>. It also had more difficult versions of the game's special stages and a hidden extra zone, <b>Cool Castle</b>.<br>
+						<br>
+						Right after the first release <b>TS Dude</b>, <b>Eddie20</b> and <b>A Cat</b> joined the project. I actually considered changing the name of the level pack due to that but ended up keeping its old name. All the levels got updated, the special stages and Cool Castle were remade from scratch, and new zones were added: <b>Mine Madness</b> and <b>Space Show</b>. Three match leves and a CTF level were also made for the sake of doing something different. The current version was released in 2013-12-27.<br>
+						<br>
+						<b>Description:</b><br>
+						<b>Orsland</b> is a level pack for version of 2.0.x of Sonic Robo Blast 2.<br>
+						The level pack contains 16 levels in the single player campaign:<br>
+						<b>Blue Beach Zone 1</b> by me<br>
+						<b>Blue Beach Zone 2</b> by me<br>
+						<b>Blue Beach Zone 3</b> by me<br>
+						<b>Rainforest Ramapage Zone 1</b> by TS Dude<br>
+						<b>Rainforest Ramapage Zone 2</b> by TS Dude<br>
+						<b>Rainforest Ramapage Zone 3</b> by A Cat<br>
+						<b>Xtreme Xmas Zone 1</b> by me<br>
+						<b>Xtreme Xmas Zone 2</b> by me<br>
+						<b>Xtreme Xmas Zone 3</b> by me<br>
+						<b>Cool Castle Zone 1</b> by me<br>
+						<b>Cool Castle Zone 3</b> by me<br>
+						<b>Mine Madness Zone 1</b> by me<br>
+						<b>Mine Madness Zone 3</b> by Eddie20<br>
+						<b>Space Show Zone 1</b> by me<br>
+						<b>Space Show Zone 2</b> by me and TS Dude<br>
+						<b>Space Show Zone 3</b> by me<br>
+						<br>
+						7 special stages made from scratch<br>
+						<br>
+						3 Match maps:<br>
+						<b>Beach Battle Zone</b> by me<br>
+						<b>Virtual Violation Zone</b> by me<br>
+						<b>Beach Battle Zone</b> by me<br>
+						<br>
+						A CTF map <b>City CTF</b> by me<br>
+						<br>
+						<a class="labelLink" href="http://mb.srb2.org/showthread.php?t=37501" target="_blank">Orsland 2014 on SRB2 message board</a>
+					</label>
+					<label lang="Finnish">
+						<b>Historiaa:</b><br>
+						Tämä kenttäpaketti on ensimmäinen pelinmuokkausprojekti, jonka julkaisin tähän peliin. Aloitin paketin kenttien teon vuonna 2010 SRB2 Doom Builderilla jatkaen projektia aina silloin tällöin. Lopulta julkaisin projektin 2013-01-18 ollessani 13-vuotias. Ensimmäisessä veriossa oli 6 kenttää yksinpelikampnjassa: <b>Blue Beach 1-3</b> ja <b>Xtreme Xmas 1-3</b>. Paketissa oli myös hankalammat versiot pelin Special Stageista, sekä piilotettu alue <b>Cool Castle Zone</b>.<br>
+						<br>
+						Heti julkaisun jälkeen <b>TS Dude</b>, <b>Eddie20</b> and <b>A Cat</b> liittyivät projektiin. Tästä syystä mietin kenttäpaketin nimen muuttamista, mutta päädyin jättämään nimen ennalleen. Kaikkia kenttiä päivitettiin, special staget ja Cool Castle Zone tehtiin alusta asti uudestaa, ja uusia alueita lisättiin: <b>Mine Madness</b> ja <b>Space Show</b>. Kolme taistelukenttää ja lipunryöstökenttä tehtiin erilaisten kenttien vuoksi. Tämän hetkinen versio julkaistiin 2013-12-27.<br>
+						<br>
+						<b>Kuvaus:</b><br>
+						<b>Orsland</b> on kenttäpaketti Sonic Robo Blast 2:n versioon 2.0.x.<br>
+						Paketissa on 16 kenttää yksinpelikampanjassa:<br>
+						<b>Blue Beach Zone 1</b> - tekijä: minä<br>
+						<b>Blue Beach Zone 2</b> - tekijä: minä<br>
+						<b>Blue Beach Zone 3</b> - tekijä: minä<br>
+						<b>Rainforest Ramapage Zone 1</b> - tekijä: TS Dude<br>
+						<b>Rainforest Ramapage Zone 2</b> - tekijä: TS Dude<br>
+						<b>Rainforest Ramapage Zone 3</b> - tekijä: Cat<br>
+						<b>Xtreme Xmas Zone 1</b> - tekijä: minä<br>
+						<b>Xtreme Xmas Zone 2</b> - tekijä: minä<br>
+						<b>Xtreme Xmas Zone 3</b> - tekijä: minä<br>
+						<b>Cool Castle Zone 1</b> - tekijä: minä<br>
+						<b>Cool Castle Zone 3</b> - tekijä: minä<br>
+						<b>Mine Madness Zone 1</b> - tekijä: minä<br>
+						<b>Mine Madness Zone 3</b> - tekijä: Eddie20<br>
+						<b>Space Show Zone 1</b> - tekijä: minä<br>
+						<b>Space Show Zone 2</b> - tekijät: minä ja TS Dude<br>
+						<b>Space Show Zone 3</b> - tekijä: minä<br>
+						<br>
+						7 uutta special stagea<br>
+						<br>
+						3 taistelukenttää:<br>
+						<b>Beach Battle Zone</b> - tekijä: minä<br>
+						<b>Virtual Violation Zone</b> - tekijä: minä<br>
+						<b>Beach Battle Zone</b> - tekijä: minä<br>
+						<br>
+						Lipunryöstökenttä <b>City CTF</b> - tekijä: minä<br>
+						<br>
+						<a class="labelLink" href="http://mb.srb2.org/showthread.php?t=37501" target="_blank">Orsland 2014 on SRB2 keskustelupalstalla</a>
+					</label>
+				</td>
+			</tr>
+			<tr>
+				<td class="shaderImageTd">
+					<img class="shaderImage" src="images/srb2/srb20103.png" alt="Xtreme Xmas">
+				</td>
+			</tr>
+			<tr>
+				<td class="shaderImageTd">
+					<img class="shaderImage" src="images/srb2/srb20104.png" alt="Cool Castle">
+				</td>
+			</tr>
+			<tr>
+				<td class="shaderImageTd">
+					<img class="shaderImage" src="images/srb2/srb20005.png" alt="Mine Madness">
+				</td>
+			</tr>
+			<tr>
+				<td class="shaderImageTd">
+					<img class="shaderImage" src="images/srb2/srb20107.png" alt="Space Show">
+				</td>
+			</tr>
+		</table>
+		<table class="shaderTable">
+			<td class="shaderImageTd" width="25%">
+				<img class="shaderImage" src="images/srb2/antiland.png" alt="Antiland">
+			</td>
+			<td class="shaderDescriptionTd" width="75%">
+				<h2 lang="Any">Antiland</h2>
+				<label lang="English">A level design project inspired by Antichamber to Sonic Robo Blast 2 2.0.x. Played around with teleports to make illusions.
+				<br><br><a class="labelLink" href="http://mb.srb2.org/showthread.php?t=37915" target="_blank">Antiland on SRB2 message board</a>.</label>
+				
+				<label lang="Finnish">Antichamberin innoittama kentänluontiprojekti pelin versioon 2.0.x. Illuusioita luotu teleporttien avulla.
+				<br><br><a class="labelLink" href="http://mb.srb2.org/showthread.php?t=37915" target="_blank">Antiland SRB2 keskustelupalstalla</a>.</label>
+			</td>
+		</table>
+	</div>
+	
+	
+	<div class="containerDiv">
+		<h2 lang="Any">N v1.4</h2>
+		<br>
+		<table class="shaderTable">
+			<td class="shaderImageTd" width="25%">
+				<img class="shaderImage" src="images/ngame/selfportrait.png" alt="Self Portrait">
+			</td>
+			<td class="shaderDescriptionTd" width="75%">
+				<h2 lang="Any">N-Artist</h2>
+				<label lang="English">This is a picture of  me in the age of 15, when I made this. In the picture you can see a game map in which the face is made out of gold pieces and the signature is made out of mines. It is created with my Java program <i>N-Artist</i> that uses pictures to generate levels in the game.
+				<br><br><a class="labelLink" href="http://www.nmaps.net/233695" target="_blank">View it on nmaps.net</a>.</label>
+				
+				<label lang="Finnish">Tässä on kuva minusta 15-vuotiaana, kun tein tämän. Kuvassa on N-pelin kenttä, jossa on kasvot on tehty kultapaloista ja signeeraus miinoista. Kuva on tehty Java-ohjelmallani <i>N-Artist</i>, joka generoi kuvista kenttiä peliin.
+				<br><br><a class="labelLink" href="http://www.nmaps.net/233695" target="_blank">Katso sivulla nmps.net</a>.</label>
+			</td>
+		</table>
+		<table class="shaderTable">
+			<tr>
+				<td  class="shaderImageTd" width="20%">
+					<img class="shaderImage" src="images/ngame/evildroniac.bmp" alt="Blue Beach">
+				</td>
+				<td class="shaderDescriptionTd" width="80%" rowspan="3">
+					<h2 lang="English">Level Design</h2>
+					<h2 lang="Finnish">Kenttien suunnitelu</h2>
+					<label lang="English">
+						I have made 180 maps in N, often using the mod <i>NReality by kkstrong</i> because of its possibilities. I released my first map <a class="labelLink" href="http://www.nmaps.net/221908" target="_blank">Spin race1</a> in 2012-09-01.<br>
+						<br>
+						The first picture is from <a class="labelLink" href="http://www.nmaps.net/233798" target="_blank">Evil Droniac's Station</a>. One of my best and complex works with the N-reality mod. Its texture is modified from one used in Sonic Robo Blast 2.<br>
+						<br>
+						Second picture is from <a class="labelLink" href="http://www.nmaps.net/233600" target="_blank">Ninja mario bros</a>, a map with Mario Mario Bros textures, and game objects modified with NReality's features, to fit the theme.<br>
+						<br>
+						Third picture is from <a class="labelLink" href="http://www.nmaps.net/235716" target="_blank">Les Aventures de Ninja</a>, a map that was made as a tribute to Titus the Fox, the first game I remember to have played. The textures are made to resemble Titus the Fox's tilemap.<br>
+						<br>
+						<a class="labelLink" href="http://www.nmaps.net/browse?q=author:Ors_II" target="_blank">List of my maps on nmaps.net</a>
+					</label>
+					<label lang="Finnish">
+						Olen tehnyt N:ään 180 kenttää, usein käyttäen modia <i>NReality - kkstrong</i>, koska se on täynnä mahdollisuuksia. Julkaisin ensimmäisen känttäni <a class="labelLink" href="http://www.nmaps.net/221908" target="_blank">Spin race1</a> 2012-09-01.<br>
+						<br>
+						Ensimmäinen kuva on kentästä <a class="labelLink" href="http://www.nmaps.net/233798" target="_blank">Evil Droniac's Station</a>. Yksi parhaista ja toiminnallisimmista kentistäni tässä pelissä. Tekstuuri on otettu pelistä Sonic Robo Blast 2.<br>
+						<br>
+						toinen kuva on kentästä <a class="labelLink" href="http://www.nmaps.net/233600" target="_blank">Ninja mario bros</a>, kenttä, jossa on Super Mario Brossin tekstuurit ja NRealityllä muokatut viholliset.<br>
+						<br>
+						Kolmas kuva on kentästä <a class="labelLink" href="http://www.nmaps.net/235716" target="_blank">Les Aventures de Ninja</a>, kunnianosoitus pelille Titus the Fox, ensimmäiselle pelille, jota muistan pelanneeni. Tekstuurit on tehty muistuttamaan Titus the Foxin tilemappia.<br>
+						<br>
+						<a class="labelLink" href="http://www.nmaps.net/browse?q=author:Ors_II" target="_blank">Lista kentistäni - nmaps.net</a>
+					</label>
+				</td>
+			</tr>
+			<tr>
+				<td class="shaderImageTd">
+					<img class="shaderImage" src="images/ngame/mario.png" alt="Xtreme Xmas">
+				</td>
+			</tr>
+			<tr>
+				<td class="shaderImageTd">
+					<img class="shaderImage" src="images/ngame/titus.png" alt="Xtreme Xmas">
+				</td>
+			</tr>
+		</table>
+	</div>
+	
+	<div class="footer">
+		<p style="text-align: center; padding-top: 8px;">© Riku Salminen 2019</p>
+	</div>
+</body>
+<script>
+function setLanguage(language) {
+	var list = document.getElementsByTagName("LABEL");
+	for(var i = 0; i < list.length; i++){
+		var entry = list[i];
+		if(entry.lang == language || entry.lang=="Any")
+			entry.style.display = "block";
+		else
+			entry.style.display = "none";
+	}
+	list = document.getElementsByTagName("H2");
+	for(var i = 0; i < list.length; i++){
+		var entry = list[i];
+		if(entry.lang == language || entry.lang=="Any")
+			entry.style.display = "block";
+		else
+			entry.style.display = "none";
+	}
+}
+
+function initFunction() {
+	setLanguage("English");
+	var body = document.getElementsByTagName("body")[0];
+	body.style.display = "block";
+}
+</script>
